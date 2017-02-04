@@ -8,7 +8,7 @@ Casche_Matrix<- function( x = matrix() ) { # created a matrix named x, following
 inv <- NULL 
 set<- function(y) {
   x <<- y
-  m <<-  NULL 
+  m <<-  NULL  # Here i am defining values for x and y in parent enviromentt
 }
 
 # now i am creating  getter and setter modules
