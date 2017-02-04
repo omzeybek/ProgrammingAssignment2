@@ -15,6 +15,9 @@ set<- function(y) {
 get <- function() x
 setInverse <- function(inverse) inv <<- inverse
 getInverse <- function() inv
+
+# and following  part i am giving names for all functions i created above 
+
 list(set = set,
      get = get,
      setInverse = setInverse,
@@ -36,6 +39,9 @@ cacheSolve <- function(x, ...) {
   }
   mat <- x$get()
   inv <- solve(mat, ...)
+# Hence solve only deals with square matrices, one  should check code by using n=m nXm matrix
   x$setInverse(inv)
   inv
 }
+
+my_matrix$get()
